@@ -102,12 +102,15 @@ endif
 
 " Now any plugins can be extracted to a subdirectory under ~/.vim/bundle,
 " and they will be added to the 'runtimepath'.
-execute pathogen#infect()
+" execute pathogen#infect()
+execute pathogen#incubate()
+" call pathogen#runtime_append_all_bundles() " this is old method
 
 " Set Taglist
 nnoremap  <Leader>lt  :TlistToggle<CR>
 
 " Set NERDTree
+let NERDTreeDirArrows=0
 nnoremap  <Leader>to  :NERDTree<CR>
 nnoremap  <Leader>tc  :NERDTreeClose<CR>
 nnoremap  <Leader>tt  :NERDTreeToggle<CR>
