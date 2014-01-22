@@ -100,6 +100,10 @@ endif
 "                        Added by Ritchie
 " ============================================================================
 
+" Now any plugins can be extracted to a subdirectory under ~/.vim/bundle,
+" and they will be added to the 'runtimepath'.
+execute pathogen#infect()
+
 " Set Taglist
 nnoremap  <Leader>lt  :TlistToggle<CR>
 
