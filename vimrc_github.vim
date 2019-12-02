@@ -102,8 +102,7 @@ endif
 
 " Now any plugins can be extracted to a subdirectory under ~/.vim/bundle,
 " and they will be added to the 'runtimepath'.
-" execute pathogen#infect()
-execute pathogen#incubate()
+execute pathogen#infect()
 " call pathogen#runtime_append_all_bundles() " this is old method
 
 " Set Taglist
